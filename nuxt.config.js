@@ -1,4 +1,4 @@
-export default {
+export default  {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxt-practice',
@@ -36,12 +36,14 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
   ],
-
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxt/image',
-    'nuxt-animejs'
+    'nuxt-animejs',
   ],
+  colorMode: {
+    classSuffix: ''
+  },
   image: {
     dir:'assets/images'
   },

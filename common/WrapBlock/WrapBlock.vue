@@ -1,5 +1,5 @@
 <template lang="">
-  <div :data-aos="dataAos">
+  <div :data-aos="dataAos" :class="size">
     <component :is="computedTag" v-bind="computedProps" class="group flex-none w-fit" >
       <div
         :class="[
@@ -26,6 +26,10 @@ export default {
       type: String,
       default: "",
     },
+    size: {
+      type:String,
+      default:""
+    },
     isExternal: {
       type: Boolean,
       default: false,
@@ -40,7 +44,7 @@ export default {
     },
     dataAos: {
       type:String,
-      default:''
+      default:'zoom-in'
     }
   },
   computed: {
