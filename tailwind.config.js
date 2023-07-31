@@ -22,10 +22,13 @@ module.exports = {
     colors: {
       'primary': '#5b78f6',
       'white':'#ffffff',
+      'dark': '#0F0F0F',
       'black': '#323232',
       'gray-100': '#F7F9FC',
+      'gray-200': '#BCBCBC',
       'gray-300': '#949597',
-      'gray-400':'#676767',
+      'gray-400' : '#9f9f9f',
+      'gray-600':'#676767',
     }
   },
   plugins: [],

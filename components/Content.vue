@@ -8,7 +8,7 @@
         link="/about"
         size="lg:w-1/2 xsm:w-full flex-grow"
       >
-        <div class="w-[224px] bg-[#7895CB] rounded-tl-[30px] rounded-br-[30px]">
+        <div class="w-[224px] bg-[#7895CB]  rounded-tl-[30px] rounded-br-[30px]">
           <nuxt-img src="avatar.png" alt="avatar" class="object-cover" />
         </div>
         <div class="xsm:pr-[20px] lg:pr-[0]">
@@ -17,7 +17,7 @@
           >
             A Frontend Developer
           </h4>
-          <h1 class="text-[36px] leading-[40px] mb-[12px]">Do Trung Nghia.</h1>
+          <h1 class="text-[36px] leading-[40px] mb-[12px] dark:text-white">Do Trung Nghia.</h1>
           <p class="text-[14px] text-[#BCBCBC] tracking-[0.3px] leading-tight">
             I am a Frontend Developer based in Ha Noi.
           </p>
@@ -52,7 +52,7 @@
               <h4 class="text-gray-300 mb-[12px] text-[12px]">
                 MORE ABOUT ME
               </h4>
-              <h1 class="text-[20px] font-[500] text-black">
+              <h1 class="text-[20px] font-[500] text-black dark:text-white">
                 Credentials
               </h1>
             </div>
@@ -65,7 +65,7 @@
               <h4 class="text-gray-300 mb-[12px] text-[12px]">
                 SHOW CASE
               </h4>
-              <h1 class="text-[20px] font-[500] text-black">
+              <h1 class="text-[20px] font-[500] text-black dark:text-white">
                 Projects
               </h1>
             </div>
@@ -74,16 +74,17 @@
       </div>
     </section>
     <section class="flex gap-x-[30px] gap-y-[30px] xsm:flex-col lg:flex-row">
-      <WrapBlock size="lg:w-1/2 xsm:w-full flex-grow" :hasButton="false" customStyle="p-[24px] flex gap-x-[30px] gap-y-[30px] items-center xsm:flex-col md:flex-row h-full">
-        <div>
-          
+      <WrapBlock size="lg:w-1/2 xsm:w-full flex-grow" :hasButton="false" customStyle="p-[24px] flex gap-x-[30px] gap-y-[30px] items-center xsm:flex-col md:flex-row h-full cursor-auto" link="">
+        <div v-for="item in listNum" class="px-[30px] py-[42px] text-center relative bg-[#FBFBFC] rounded-[30px] dark:before:bg-gradient-to-br dark:bg-dark dark:before:from-[#ffffff4d] dark:before:to-[#ffffff0d] dark:before:absolute dark:before:w-full dark:before:h-full dark:before:top-0 dark:before:left-0 dark:before:opacity-[0.25] dark:before:rounded-[30px] dark:before:z-[1] xsm:w-full lg:w-auto">
+          <h3 class="text-[34px] leading-tight text-primary tracking-[-1px] mb-[17px] font-medium">+{{ addZero(item.num) }}</h3>
+          <p class="text-[12px] text-gray-200">{{ item.title }}</p>
         </div>
       </WrapBlock>
       <WrapBlock size="lg:w-1/2 xsm:w-full flex-grow" customStyle="p-[24px] pt-[76px] flex gap-x-[30px] gap-y-[30px] items-center xsm:flex-col md:flex-row h-full" link="/contact">
         <div class="absolute top-0">
               <nuxt-img src="icon-star.png" class="object-contain"/>
         </div>
-        <h1 class="text-[41px] leading-[52px] text-[#0F0F0F] font-[500]">
+        <h1 class="text-[41px] leading-[52px] text-[#0F0F0F] dark:text-white font-[500]">
           Let' s
           <br/>
           work
@@ -113,6 +114,18 @@ export default {
       { firstText: "WELCOME TO MY", lastText: "PORTFOLIO" },
       { firstText: "WELCOME TO MY", lastText: "PORTFOLIO" },
     ];
+    const listNum = [
+      {num: 1, title: 'YEARS EXPERIENCE'},
+      {num: 1, title: 'YEARS EXPERIENCE'},
+      {num: 1, title: 'YEARS EXPERIENCE'}
+    ]
+    const addZero = (num) => {
+      if(num < 10) {
+        return `0${num}`
+      }else {
+        return `${num}`
+      }
+    }
     watch(
       () => {
         // The expression to watch
@@ -125,6 +138,8 @@ export default {
     return {
       state,
       listFeatured,
+      listNum,
+      addZero
     };
   },
   mounted() {

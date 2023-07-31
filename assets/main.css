@@ -62,7 +62,7 @@
     font-weight: 400;
 }
 body {
-    @apply bg-gray-100
+    @apply bg-gray-100 dark:bg-dark dark:text-gray-400
 }
 a,p {
     @apply leading-[19.2px]
