@@ -20,6 +20,7 @@ module.exports = {
       'xsm': '280px',
     },
     colors: {
+      'transparent':'transparent',
       'primary': '#5b78f6',
       'white':'#ffffff',
       'dark': '#0F0F0F',

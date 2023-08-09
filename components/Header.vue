@@ -1,12 +1,12 @@
 <template>
   <header
-    class="bg-none w-full max-w-[1170px] mx-auto flex justify-between items-center mt-[12px] xl:px-0 xsm:p-[20px]"
+    class="bg-none w-full max-w-[1170px] mx-auto flex justify-between items-center mt-[12px] xl:px-0 xsm:px-[20px]"
   >
     <nuxt-link to="/" class="h-full w-auto block z-[16]">
       <nuxt-img src="logo.png" class="h-[32px] object-contain"/>
     </nuxt-link>
     <ul
-      class="flex lg:relative xsm:fixed lg:pt-0 lg:pb-0 xsm:pt-[100px] xsm:pb-[20px] lg:flex-row xsm:flex-col px-[12px] top-0 left-0 lg:w-auto xsm:w-full lg:gap-x-[49px] xsm:gap-y-[30px] lg:translate-y-[0] xsm:translate-y-[-100%] z-[15] duration-300 lg:bg-[transparent] xsm:bg-[#FBFBFC]"
+      class="flex lg:relative xsm:fixed lg:pt-0 lg:pb-0 xsm:pt-[100px] xsm:pb-[20px] lg:flex-row xsm:flex-col px-[12px] top-0 left-0 lg:w-auto xsm:w-full lg:gap-x-[49px] xsm:gap-y-[30px] lg:translate-y-[0] xsm:translate-y-[-100%] z-[15] duration-300 lg:bg-[transparent] xsm:bg-[#FBFBFC] dark:xsm:bg-[#0F0F0F]"
       :class="show ? '!translate-y-[0]' : ''"
     >
       <li
@@ -23,9 +23,9 @@
         <nuxt-link to="/contact"> Contact </nuxt-link>
       </li>
     </ul>
-    <div class="flex items-center gap-[24px]">
-      <button class="w-[26px] h-[26px]" @click="changeMode">
-        <nuxt-img  :src="this.$colorMode.preference === 'light' ? 'light.png' : 'dark.svg'" />
+    <div class="flex items-center gap-[24px] z-[16]">
+      <button @click="changeMode" :title="this.$colorMode.preference === 'light' ? 'dark' : 'light'">
+        <nuxt-img  :src="this.$colorMode.preference === 'light' ? 'darkMode.svg' : 'lightMode.svg'" />
       </button>
       <button
         type="button"
@@ -35,23 +35,23 @@
           Let's talk
         </nuxt-link>
       </button>
-    </div>
-    <div
-      class="lg:hidden xsm:flex w-[25px] h-[18px] flex-col justify-between z-[16]"
-      @click="handleShowNav"
-    >
-      <span
-        class="w-full h-[1px] bg-[#0f0f0f] dark:bg-white block duration-300"
-        :class="show ? 'rotate-45 translate-y-[10px]' : ''"
-      ></span>
-      <span
-        class="w-full h-[1px] bg-[#0f0f0f] dark:bg-white block duration-300"
-        :class="show ? 'scale-0' : ''"
-      ></span>
-      <span
-        class="w-full h-[1px] bg-[#0f0f0f] dark:bg-white block duration-300"
-        :class="show ? 'rotate-[-45deg] translate-y-[-7px]' : ''"
-      ></span>
+      <div
+        class="lg:hidden xsm:flex w-[25px] h-[18px] flex-col justify-between z-[16]"
+        @click="handleShowNav"
+      >
+        <span
+          class="w-full h-[1px] bg-[#0f0f0f] dark:bg-white block duration-300"
+          :class="show ? 'rotate-45 translate-y-[10px]' : ''"
+        ></span>
+        <span
+          class="w-full h-[1px] bg-[#0f0f0f] dark:bg-white block duration-300"
+          :class="show ? 'scale-0' : ''"
+        ></span>
+        <span
+          class="w-full h-[1px] bg-[#0f0f0f] dark:bg-white block duration-300"
+          :class="show ? 'rotate-[-45deg] translate-y-[-7px]' : ''"
+        ></span>
+      </div>
     </div>
   </header>
 </template>
