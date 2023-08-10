@@ -100,8 +100,8 @@ export default {
     },
     onSubmit() {
       const message = this.validate();
-      this.state.loading = true;
       if (Object.keys(message).length === 0) {
+        this.state.loading = true;
         emailjs
           .send(
             "service_0ckybfy",
