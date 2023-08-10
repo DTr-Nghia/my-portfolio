@@ -48,6 +48,7 @@ export default  {
     classSuffix: '',
   },
   image: {
+    provider: "ipx",
     dir:'assets/images'
   },
   // Build Configuration: https://go.nuxtjs.dev/config-build
