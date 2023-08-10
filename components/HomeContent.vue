@@ -9,7 +9,7 @@
         size="lg:w-1/2 xsm:w-full flex-grow"
       >
         <div class="w-[224px] bg-[#7895CB]  rounded-tl-[30px] rounded-br-[30px]">
-          <nuxt-img src="avatar.png" alt="avatar" class="object-cover" />
+          <img src="../assets/images/avatar.png" alt="avatar" class="object-cover" />
         </div>
         <div class="xsm:pr-[20px] lg:pr-[0]">
           <h4
@@ -46,7 +46,7 @@
         <div class="flex gap-x-[30px] gap-y-[30px] mt-[30px] xsm:flex-col md:flex-row">
           <WrapBlock customStyle="p-[24px]" link="/credentials" size="lg:w-1/2 xsm:w-full" >
             <div class="min-h-[116px] flex items-center ">
-              <nuxt-img src="signature.png" class="my-auto"/>
+              <img src="../assets/images/signature.png" class="my-auto"/>
             </div>
             <div>
               <h4 class="text-gray-300 mb-[12px] text-[12px]">
@@ -59,7 +59,7 @@
           </WrapBlock>
           <WrapBlock customStyle="p-[24px]" link="/works" size="lg:w-1/2 xsm:w-full" dataAos="zoom-in">
             <div class="min-h-[116px] flex items-center justify-center">
-              <nuxt-img src="my-works.png" class="my-auto max-h-[116px] object-contain"/>
+              <img src="../assets/images/my-works.png" class="my-auto max-h-[116px] object-contain"/>
             </div>
             <div>
               <h4 class="text-gray-300 mb-[12px] text-[12px]">
@@ -82,7 +82,7 @@
       </WrapBlock>
       <WrapBlock size="lg:w-1/2 xsm:w-full flex-grow" customStyle="p-[24px] pt-[76px] flex gap-x-[30px] gap-y-[30px] items-center xsm:flex-col md:flex-row h-full" link="/contact">
         <div class="absolute top-0">
-              <nuxt-img src="icon-star.png" class="object-contain"/>
+              <img src="../assets/images/icon-star.png" class="object-contain"/>
         </div>
         <h1 class="text-[41px] leading-[52px] text-[#0F0F0F] dark:text-white font-[500]">
           Let' s

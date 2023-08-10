@@ -12,8 +12,8 @@
         ]"
       >
           <slot></slot>
-        <nuxt-img
-          src="icon-2.svg"
+        <img
+          src="../../assets/images/icon-2.svg"
           alt=""
           class="opacity-20 group-hover:opacity-100 transition-all duration-500 absolute lg:right-[30px] lg:bottom-[30px] xsm:right-[20px] xsm:bottom-[20px] dark:filter dark:grayscale-100 dark:contrast-[300] dark:brightness-[300]"
           :class="hasButton ? 'block' : 'hidden'"

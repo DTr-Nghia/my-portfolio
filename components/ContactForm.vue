@@ -8,7 +8,7 @@
       :isLink="false"
     >
       <div class="absolute top-0 right-[40px]">
-        <nuxt-img src="icon-star.png" class="object-contain" />
+        <img src="../assets/images/icon-star.png" class="object-contain" />
       </div>
       <h1
         class="mb-[30px] text-[44px] leading-tight dark:text-white text-black"

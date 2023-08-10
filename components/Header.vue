@@ -3,7 +3,7 @@
     class="bg-none w-full max-w-[1170px] mx-auto flex justify-between items-center mt-[12px] xl:px-0 xsm:px-[20px]"
   >
     <nuxt-link to="/" class="h-full w-auto block z-[16]">
-      <nuxt-img src="logo.png" class="h-[32px] object-contain"/>
+      <img src="../assets/images/logo.png" class="h-[32px] object-contain"/>
     </nuxt-link>
     <ul
       class="flex lg:relative xsm:fixed lg:pt-0 lg:pb-0 xsm:pt-[100px] xsm:pb-[20px] lg:flex-row xsm:flex-col px-[12px] top-0 left-0 lg:w-auto xsm:w-full lg:gap-x-[49px] xsm:gap-y-[30px] lg:translate-y-[0] xsm:translate-y-[-100%] z-[15] duration-300 lg:bg-[transparent] xsm:bg-[#FBFBFC] dark:xsm:bg-[#0F0F0F]"
@@ -25,7 +25,7 @@
     </ul>
     <div class="flex items-center gap-[24px] z-[16]">
       <button @click="changeMode" :title="this.$colorMode.preference === 'dark' ? 'light' : 'dark'">
-        <nuxt-img  :src="this.$colorMode.preference === 'dark' ? 'lightMode.svg' :  'darkMode.svg'" />
+        <img :src="this.$colorMode.preference === 'dark' ? require('../assets/images/lightMode.svg') :  require('../assets/images/darkMode.svg')" />
       </button>
       <button
         type="button"

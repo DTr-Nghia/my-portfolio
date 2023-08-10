@@ -1,7 +1,7 @@
 <template lang="">
   <div class="pt-[70px] pb-[40px]">
     <div class="h-[32px] text-center">
-      <nuxt-img src="logo.png" alt="logo" class="h-full mx-auto" />
+      <img src="../assets/images/logo.png" alt="logo" class="h-full mx-auto" />
     </div>
     <ul class="flex items-center justify-center gap-[44px] mt-[33px] mb-[37px]">
       <li v-for="item in linkList" >

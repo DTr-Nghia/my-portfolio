@@ -21,7 +21,7 @@
               dataAos=""
               :isLink="false"
             >
-              <nuxt-img
+              <img
                 :src="item.image"
                 class="dark:filter dark:grayscale-100 dark:contrast-[300] dark:brightness-[300]"
               />
@@ -52,7 +52,7 @@
               dataAos=""
               size="w-[82px] h-[82px] "
             >
-              <nuxt-img
+              <img
                 :src="item.image"
                 class="dark:filter dark:grayscale-100 dark:contrast-[300] dark:brightness-[300] dark:group-hover:grayscale-0 dark:group-hover:contrast-[100] dark:group-hover:brightness-[0]"
               />
@@ -84,12 +84,12 @@ export default {
           },
           { label: "zeder1999@gmail.com", link: "mailto:zeder1999@gmail.com",target:"_self", },
         ],
-        image: "mail.svg",
+        image: require("../assets/images/mail.svg"),
       },
       {
         label: "CONTACT",
         info: [{ label: "+84 974603499", link: "tel:+84 974603499",target:"_self", }],
-        image: "phone.svg",
+        image: require("../assets/images/phone.svg"),
       },
       {
         label: "LOCATION",
@@ -100,13 +100,13 @@ export default {
             target:"_blank",
           },
         ],
-        image: "pin-alt.svg",
+        image: require("../assets/images/pin-alt.svg"),
       },
     ];
     const socialInfo = [
       {
         label: "Facebook",
-        image: "facebook.svg",
+        image: require("../assets/images/facebook.svg"),
       },
     ];
     return {
