@@ -1,5 +1,5 @@
 <template lang="">
-  <div class="max-w-[1170px] mx-auto xsm:px-[20px] xl:px-0 pt-[80px]">
+  <div class="max-w-[1170px] mx-auto xsm:px-[20px] xl:px-0 pt-[40px]">
     <div class="flex gap-[24px] justify-between xsm:flex-col lg:flex-row">
       <div class="max-w-[290px]">
         <h1

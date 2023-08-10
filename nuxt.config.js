@@ -44,7 +44,8 @@ export default  {
     'nuxt-animejs',
   ],
   colorMode: {
-    classSuffix: ''
+    preference: 'light',
+    classSuffix: '',
   },
   image: {
     dir:'assets/images'

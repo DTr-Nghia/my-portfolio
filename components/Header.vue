@@ -24,8 +24,8 @@
       </li>
     </ul>
     <div class="flex items-center gap-[24px] z-[16]">
-      <button @click="changeMode" :title="this.$colorMode.preference === 'light' ? 'dark' : 'light'">
-        <nuxt-img  :src="this.$colorMode.preference === 'light' ? 'darkMode.svg' : 'lightMode.svg'" />
+      <button @click="changeMode" :title="this.$colorMode.preference === 'dark' ? 'light' : 'dark'">
+        <nuxt-img  :src="this.$colorMode.preference === 'dark' ? 'lightMode.svg' :  'darkMode.svg'" />
       </button>
       <button
         type="button"
