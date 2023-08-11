@@ -15,7 +15,7 @@ module.exports = {
       backgroundImage: {
         'dark-gradient': 'linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05))',
         'dark-gradient-input': 'linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01))',
-      }
+      },
     },
     screens: {
       'xl':'1439px',

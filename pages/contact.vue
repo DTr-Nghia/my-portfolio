@@ -23,7 +23,7 @@
             >
               <img
                 :src="item.image"
-                class="dark:filter dark:grayscale-100 dark:contrast-[300] dark:brightness-[300]"
+                class=" dark:grayscale-100 dark:contrast-[300] dark:brightness-[300]  dark:filter"
               />
             </WrapBlock>
             <div>
@@ -54,7 +54,7 @@
             >
               <img
                 :src="item.image"
-                class="dark:filter dark:grayscale-100 dark:contrast-[300] dark:brightness-[300] dark:group-hover:grayscale-0 dark:group-hover:contrast-[100] dark:group-hover:brightness-[0]"
+                class="dark:grayscale-100 dark:contrast-[300] dark:brightness-[300]  dark:group-hover:grayscale-0 dark:group-hover:contrast-[100] dark:group-hover:brightness-[0] dark:filter"
               />
             </WrapBlock>
           </li>

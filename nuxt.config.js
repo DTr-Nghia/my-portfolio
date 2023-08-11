@@ -1,3 +1,5 @@
+import { join } from 'path'
+
 export default  {
   // Global page headers: https://go.nuxtjs.dev/config-head
   target: 'static',
@@ -57,7 +59,7 @@ export default  {
     postcss: {
       postcssOptions: {
         plugins: {
-          tailwindcss: {},
+          tailwindcss: join(__dirname, 'tailwind.config.js'),
           autoprefixer: {},
         },
       },
