@@ -11,7 +11,12 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'dark-gradient': 'linear-gradient(120deg, rgba(255,255,255,0.3), rgba(255,255,255,0.05))',
+        'dark-gradient-input': 'linear-gradient(120deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01))',
+      }
+    },
     screens: {
       'xl':'1439px',
       'lg':'1023px',

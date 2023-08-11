@@ -4,7 +4,7 @@
       <div
         :class="[
           customStyle ? customStyle : 'p-[40px]',
-          'bg-white rounded-[30px] relative  dark:before:bg-gradient-to-br dark:bg-dark dark:before:from-[#ffffff4d] dark:before:to-[#ffffff0d]  before:absolute dark:before:w-full dark:before:h-full dark:before:top-0 dark:before:left-0 dark:before:opacity-[0.25] before:rounded-[30px] dark:before:z-[1]',
+          'bg-white rounded-[30px] relative  dark:before:bg-dark-gradient dark:bg-dark before:absolute dark:before:w-full dark:before:h-full dark:before:top-0 dark:before:left-0 dark:before:opacity-[0.25] before:rounded-[30px] dark:before:z-[1]',
         ]"
       >
         <slot></slot>

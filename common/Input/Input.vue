@@ -8,7 +8,7 @@
       :placeholder="placeholder"
       v-on:input="action"
       :autocomplete="type"
-      class="bg-[#FBFBFC] py-[17px] px-[20px] dark:bg-transparent dark:bg-gradient-to-br dark:from-[#ffffff0d] dark:to-[#ffffff03] rounded-[10px] border-none outline-none w-full"
+      class="bg-[#FBFBFC] py-[17px] px-[20px] dark:bg-transparent dark:bg-dark-gradient-input rounded-[10px] border-none outline-none w-full"
     />
     <p class="text-[#FF3333] text-[14px] p-[5px]" :class="error ? 'block' : 'hidden'">{{ error }}</p>
   </div>
