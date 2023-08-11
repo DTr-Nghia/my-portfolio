@@ -1,18 +1,13 @@
 <template lang="">
-  <div :data-aos="dataAos ? dataAos: null" :class="size">
-    <component
-      :is="computedTag"
-      v-bind="computedProps"
-      class="group flex-none"
-    >
+  <div :data-aos="dataAos ? dataAos : null" :class="size">
+    <component :is="computedTag" v-bind="computedProps" class="group flex-none">
       <div
         :class="[
           customStyle ? customStyle : 'p-[40px]',
-          this.$colorMode.preference === 'dark' ? 'dark-mode-overlay' : '',
-          'bg-white rounded-[30px] relative dark:bg-dark ',
+          'bg-white rounded-[30px] relative  dark:before:bg-gradient-to-br dark:bg-dark dark:before:from-[#ffffff4d] dark:before:to-[#ffffff0d]  before:absolute dark:before:w-full dark:before:h-full dark:before:top-0 dark:before:left-0 dark:before:opacity-[0.25] before:rounded-[30px] dark:before:z-[1]',
         ]"
       >
-          <slot></slot>
+        <slot></slot>
         <img
           src="../../assets/images/icon-2.svg"
           alt=""
@@ -39,7 +34,7 @@ export default {
       type: Boolean,
       default: false,
     },
-    isLink:{
+    isLink: {
       type: Boolean,
       default: true,
     },
@@ -58,12 +53,18 @@ export default {
   },
   computed: {
     computedTag() {
-      return this.isExternal && this.isLink ? "a" : !this.isExternal && this.isLink?  "nuxt-link" : "div";
+      return this.isExternal && this.isLink
+        ? "a"
+        : !this.isExternal && this.isLink
+        ? "nuxt-link"
+        : "div";
     },
     computedProps() {
       return this.isExternal && this.isLink
-        ? { href: this.link, target: "_blank" } 
-        : !this.isExternal && this.isLink ? { to: this.link } : null;
+        ? { href: this.link, target: "_blank" }
+        : !this.isExternal && this.isLink
+        ? { to: this.link }
+        : null;
     },
   },
 };
