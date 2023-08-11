@@ -41,7 +41,7 @@
           name="message"
           placeholder="Your Message*"
           v-model="state.formState.message"
-          class="bg-[#FBFBFC] z-[5] py-[17px] px-[20px] relative dark:bg-transparent dark:bg-gradient-to-br dark:from-[#ffffff0d] dark:to-[#ffffff03] rounded-[10px] resize-none w-full h-[145px] outline-none border-none"
+          class="bg-[#FBFBFC] z-[5] py-[17px] px-[20px] relative dark:bg-transparent dark:bg-dark-gradient-input rounded-[10px] resize-none w-full h-[145px] outline-none border-none"
         ></textarea>
         <p
           class="text-[#FF3333] text-[14px] p-[5px]"

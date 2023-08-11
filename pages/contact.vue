@@ -95,7 +95,7 @@ export default {
         label: "LOCATION",
         info: [
           {
-            label: "5/298/26/49 Ngoc Lam Ward, Long Bien District, Ha Noi City",
+            label: "Ngoc Lam Ward, Long Bien District, Ha Noi City",
             link: "https://www.google.com/maps/dir//Ng%E1%BB%8Dc+L%C3%A2m,+Long+Bi%C3%AAn,+H%C3%A0+N%E1%BB%99i,+Vi%E1%BB%87t+Nam/@21.0459727,105.8728724,21z/data=!4m9!4m8!1m0!1m5!1m1!1s0x3135abd42b7a1e49:0x1e1f1d825c951449!2m2!1d105.8729199!2d21.0461802!3e0?hl=vi-VN&entry=ttu",
             target:"_blank",
           },
