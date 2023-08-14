@@ -52,13 +52,13 @@ export default {
           {
             projectName: "AHT Global Site",
             position: "Web Developer",
-            image: require("../assets/images/aht.webp"),
+            image: "https://i.ibb.co/T8gzmM2/aht.webp",
             link: "https://global.arrowhitech.com/",
           },
           {
             projectName: "Nextrend Furniture",
             position: "Web Developer",
-            image: require("../assets/images/nextrend.webp"),
+            image: "https://i.ibb.co/56hk87k/nextrend.webp",
             link: "https://nextrend.com.au/",
           },
         ],
@@ -66,13 +66,13 @@ export default {
           {
             projectName: "Ester Spirits",
             position: "Web Developer",
-            image: require("../assets/images/ester.png"),
+            image: "https://i.ibb.co/NS3MYdZ/ester.png",
             link: "https://esterspirits.com.au/",
           },
           {
             projectName: "iONAH",
             position: "Web Developer",
-            image: require("../assets/images/ionah.webp"),
+            image: "https://i.ibb.co/S3RqDn0/ionah.webp",
             link: "https://ionah.com/",
           },
         ],
@@ -80,13 +80,13 @@ export default {
           {
             projectName: "Backa Australia",
             position: "Web Developer",
-            image: require("../assets/images/backa.png"),
+            image: "https://i.ibb.co/BBBNx2z/backa.png",
             link: "https://backa.com.au/",
           },
           {
             projectName: "Concierge Car Wash",
             position: "Web Developer",
-            image: require("../assets/images/carwash.png"),
+            image: "https://i.ibb.co/nDFVmFr/carwash.png",
             link: "https://conciergecarwash.com.au/",
           },
         ],
