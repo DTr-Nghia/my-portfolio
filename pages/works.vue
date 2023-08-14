@@ -1,12 +1,6 @@
 <template lang="">
   <div class="max-w-[1170px] mx-auto xsm:px-[20px] xl:px-0 pt-[40px]">
-    <div
-      class="flex lg:text-[74px] md:text-[56px] uppercase text-[26px] mb-[20px] font-semibold items-center justify-center gap-[10px]"
-    >
-      <img src="../assets/images/star-2.png" alt="" class="flex-none xsm:w-[25px] md:w-auto" />
-      <h1 class="text-dark dark:text-white">Some Projects</h1>
-      <img src="../assets/images/star-2.png" alt="" class="flex-none xsm:w-[25px] md:w-auto" />
-    </div>
+    <Title label="Some Projects"/>
     <div class="grid xsm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <div v-for="item in listWorks" class="flex flex-col gap-4 align-top">
         <div v-for="el in item">
@@ -41,9 +35,11 @@
 </template>
 <script>
 import WrapBlock from "@/common/WrapBlock/WrapBlock.vue";
+import Title from "~/common/Title/Title.vue";
 export default {
   components: {
     WrapBlock,
+    Title,
   },
   data() {
     return {

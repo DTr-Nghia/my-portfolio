@@ -77,3 +77,12 @@ input:-webkit-autofill {
 input:autofill {
   background-color: transparent!important;
 }
+body::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #888;
+}

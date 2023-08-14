@@ -1,6 +1,6 @@
 <template lang="">
   <div :data-aos="dataAos ? dataAos : null" :class="size">
-    <component :is="computedTag" v-bind="computedProps" class="group flex-none">
+    <component :is="computedTag" v-bind="computedProps" class="group flex-none h-full">
       <div
         :class="[
           customStyle ? customStyle : 'p-[40px]',
