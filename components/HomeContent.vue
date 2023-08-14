@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-[1170px] mx-auto xsm:px-[20px] xl:px-0 pt-[40px] ">
     <section
-      class="flex gap-x-[30px] gap-y-[30px] xsm:flex-col lg:flex-row mb-[24px]"
+      class="flex gap-x-[30px] gap-y-[30px] xsm:flex-col lg:flex-row mb-[30px]"
     >
       <WrapBlock
         customStyle="lg:py-[50px] lg:px-[40px] xsm:py-[40px] xsm:px-[25px]  flex gap-x-[30px] gap-y-[30px] items-center xsm:flex-col lg:flex-row h-full"
