@@ -127,7 +127,7 @@ export default {
             },
             (error) => {
               this.state.loading = false;
-              this.$toast.success("Something errors...");
+              this.$toast.error("Something errors...");
             }
           );
       }
