@@ -42,13 +42,13 @@
         >
           Social Info
         </h1>
-        <ul data-aos="zoom-in">
+        <ul data-aos="zoom-in" class="flex gap-[10px]">
           <li v-for="item in socialInfo">
             <WrapBlock
               :hasButton="false"
               customStyle="p-[0] !rounded-[50%] before:!rounded-[50%]  flex items-center justify-center dark:hover:bg-white group w-full h-full transition-all duration-500"
               :isExternal="true"
-              link="https://www.facebook.com/"
+              :link="item.link"
               dataAos=""
               size="w-[82px] h-[82px] "
             >
@@ -107,7 +107,13 @@ export default {
       {
         label: "Facebook",
         image: require("../assets/images/facebook.svg"),
+        link:"https://www.facebook.com/"
       },
+      {
+          label: "Linkedin",
+          image: require("../assets/images/linkin.svg"),
+          link:"https://www.linkedin.com/in/nghia-do-09239a195/"
+        },
     ];
     return {
       contactInfo,

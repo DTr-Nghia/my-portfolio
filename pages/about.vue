@@ -46,7 +46,7 @@
     </div>
     <div class="flex gap-[30px] md:flex-row flex-col mb-[30px]">
       <div class="md:w-1/2 w-full" v-for="item in infoDetails">
-        <WrapBlock :hasButton="false" :isLink="false" customStyle="p-[30px]">
+        <WrapBlock :hasButton="false" :isLink="false" customStyle="p-[30px] h-full" size="flex-grow h-full">
           <h2 class="dark:text-white text-black mb-[20px] font-medium">
             {{ item.label }}
           </h2>
@@ -143,7 +143,7 @@ export default {
           content: [
             {
               time: "2017 - 2022",
-              text: "Bachelor Degree in Electronic Communication",
+              text: "Engineer's degree - Electronics and Communications Engineering",
               subText: "Posts and Telecommunications Institute of Technology",
             },
           ],
