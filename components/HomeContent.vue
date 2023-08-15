@@ -75,7 +75,7 @@
     </section>
     <section class="flex gap-x-[30px] gap-y-[30px] xsm:flex-col lg:flex-row">
       <WrapBlock size="lg:w-1/2 xsm:w-full flex-grow" :hasButton="false" customStyle="p-[24px] flex gap-x-[30px] gap-y-[30px] items-center xsm:flex-col md:flex-row h-full cursor-auto" link="">
-        <div v-for="item in listNum" class="px-[30px] py-[42px] text-center relative bg-[#FBFBFC] rounded-[30px] dark:before:bg-gradient-to-br dark:bg-dark dark:before:from-[#ffffff4d] dark:before:to-[#ffffff0d] dark:before:absolute dark:before:w-full dark:before:h-full dark:before:top-0 dark:before:left-0 dark:before:opacity-[0.25] dark:before:rounded-[30px] dark:before:z-[1] xsm:w-full lg:w-auto">
+        <div v-for="item in listNum" class="px-[30px] py-[42px] text-center relative bg-[#FBFBFC] rounded-[30px]  dark:bg-dark dark:before:bg-dark-gradient dark:before:absolute dark:before:w-full dark:before:h-full dark:before:top-0 dark:before:left-0 dark:before:opacity-[0.25] dark:before:rounded-[30px] dark:before:z-[1] xsm:w-full lg:w-auto">
           <h3 class="text-[34px] leading-tight text-primary tracking-[-1px] mb-[17px] font-medium">+{{ addZero(item.num) }}</h3>
           <p class="text-[12px] text-black dark:text-gray-200 font-medium uppercase">{{ item.title }}</p>
         </div>
