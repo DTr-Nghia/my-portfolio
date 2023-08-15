@@ -33,12 +33,7 @@
               Do Trung Nghia
             </h2>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
-              eget tincidunt sem, et molestie lacus. Integer ut risus et justo
-              volutpat bibendum eget sit amet felis. Integer laoreet porttitor
-              neque eu vestibulum. Integer sollicitudin, nisl et sollicitudin
-              ultrices, justo ante tincidunt nunc, a volutpat ligula mauris vel
-              ex.
+              I'm a front-end developer with 1.5 years of focused experience in building captivating web interfaces using ReactJS. Throughout my journey, I've become well-versed in harnessing the power of React along with my proficiency in HTML, CSS, and JavaScript.
             </p>
           </div>
         </WrapBlock>
