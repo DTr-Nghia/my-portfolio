@@ -18,7 +18,7 @@
               />
             </div>
             <h3
-              class="text-gray-200 text-sm uppercase opacity-50 mb-[2px] leading-tight"
+              class="text-gray-200 text-sm uppercase dark:opacity-50 mb-[2px] leading-tight"
             >
               {{ el.position }}
             </h3>
