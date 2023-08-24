@@ -103,7 +103,7 @@ export default {
         { name: "Gatsby", level: "Advanced" },
         { name: "HTML, CSS", level: "Advanced" },
         { name: "NextJs", level: "Intermediate" },
-        { name: "VueJS/NuxtJs", level: "Intermediate" },
+        { name: "VueJS/NuxtJs", level: "Basic" },
         { name: "Shopify", level: "Basic" },
       ],
       listCertification: [
