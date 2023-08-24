@@ -22,7 +22,7 @@
           @nghiadt
         </p>
         <ul class="flex justify-center z-[5] gap-[10px] mb-[36px]">
-          <li v-for="item in socialInfo">
+          <li v-for="(item,index) in socialInfo" :key="index">
             <WrapBlock
               :hasButton="false"
               customStyle="p-[0] !rounded-[50%] before:!rounded-[50%]  flex items-center justify-center dark:hover:bg-white group/socials w-full h-full transition-all duration-500"

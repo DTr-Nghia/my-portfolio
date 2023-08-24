@@ -10,7 +10,8 @@
       :class="show ? '!translate-y-[0]' : ''"
     >
       <li
-        v-for="item in items"
+        v-for="(item,index) in items"
+        :key="index"
         class="lg:py-[26px] xsm:px-0 text-gray-600 hover:text-primary duration-300 cursor-pointer header-link text-center"
       >
         <nuxt-link :to="item.slug">

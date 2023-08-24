@@ -4,7 +4,7 @@
       <img src="../assets/images/logo.png" alt="logo" class="h-full mx-auto" />
     </div>
     <ul class="flex items-center justify-center gap-[44px] mt-[33px] mb-[37px]">
-      <li v-for="item in linkList" >
+      <li v-for="(item,index) in linkList" :key="index">
         <nuxt-link :to="item.slug" class="text-gray-600 text-[12px] uppercase font-semibold hover:text-primary transition-all duration-500">
           {{ item.label }}
         </nuxt-link>

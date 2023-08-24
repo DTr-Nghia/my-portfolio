@@ -40,12 +40,12 @@
       </div>
     </div>
     <div class="flex gap-[30px] md:flex-row flex-col mb-[30px]">
-      <div class="md:w-1/2 w-full" v-for="item in infoDetails">
+      <div class="md:w-1/2 w-full" v-for="(item,index) in infoDetails" :key="index">
         <WrapBlock :hasButton="false" :isLink="false" customStyle="p-[30px] h-full" size="flex-grow h-full">
           <h2 class="dark:text-white text-black mb-[20px] font-medium">
             {{ item.label }}
           </h2>
-          <div v-for="el in item.content">
+          <div v-for="(el,idx) in item.content" :key="idx">
             <p class="text-gray-200 mb-[15px]">{{ el.time }}</p>
             <h3
               class="dark:text-white text-primary text-[18px] mb-[7px] font-medium"

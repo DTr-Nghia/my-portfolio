@@ -10,7 +10,8 @@
         </h1>
         <ul class="mb-[55px]">
           <li
-            v-for="item in contactInfo"
+            v-for="(item,index) in contactInfo"
+            :key="index"
             class="flex gap-[24px] items-center [&:not(:last-child)]:mb-[70px]"
             data-aos="zoom-in"
           >
@@ -28,7 +29,7 @@
             </WrapBlock>
             <div>
               <span class="text-gray-400">{{ item.label }}</span>
-              <h4 v-for="el in item.info" class="dark:text-white text-black">
+              <h4 v-for="(el,idx) in item.info" :key="idx" class="dark:text-white text-black">
                 <a :href="el.link" :target="el.target">
                   {{ el.label }}
                 </a>
@@ -43,7 +44,7 @@
           Social Info
         </h1>
         <ul data-aos="zoom-in" class="flex gap-[10px]">
-          <li v-for="item in socialInfo">
+          <li v-for="(item,index) in socialInfo" :key="index">
             <WrapBlock
               :hasButton="false"
               customStyle="p-[0] !rounded-[50%] before:!rounded-[50%]  flex items-center justify-center dark:hover:bg-white group w-full h-full transition-all duration-500"

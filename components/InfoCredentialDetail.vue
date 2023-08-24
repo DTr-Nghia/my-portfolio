@@ -26,13 +26,13 @@
         meaningful impact.
       </p>
     </div>
-    <div v-for="item in infoDetails" class="mb-[85px]" data-aos="fade-up">
+    <div v-for="(item,index) in infoDetails" :key="index" class="mb-[85px]" data-aos="fade-up">
       <h2
         class="text-black dark:text-white text-[18px] uppercase mb-[22px] font-medium"
       >
         {{ item.label }}
       </h2>
-      <div v-for="el in item.content">
+      <div v-for="(el,idx) in item.content" :key="idx">
         <h4 class="text-gray-200 dark:opacity-60 text-[16px] font-medium">
           {{ el.time }}
         </h4>
@@ -49,7 +49,7 @@
         Skills
       </h2>
       <ul class="grid grid-cols-2 gap-[24px]">
-        <li v-for="item in listSkills">
+        <li v-for="(item,index) in listSkills" :key="index">
             <h3 class="text-black dark:text-white text-[18px]">{{item.name}}</h3>
             <h4 class="text-[14px] text-gray-200 dark:opacity-80">{{item.level}}</h4>
         </li>
@@ -62,7 +62,7 @@
         Certifications
       </h2>
       <ul class="flex flex-col gap-[24px]">
-        <li v-for="item in listCertification">
+        <li v-for="(item,index) in listCertification" :key="index">
             <h4 class="text-[16px] text-gray-200 dark:opacity-80 mb-[7px]">{{item.time}}</h4>
             <h3 class="text-black dark:text-white text-[18px]">{{item.name}}</h3>
             <h4 class="text-[14px] text-gray-200 dark:opacity-80">{{item.level}}</h4>
@@ -102,8 +102,9 @@ export default {
         { name: "React", level: "Advanced" },
         { name: "Gatsby", level: "Advanced" },
         { name: "HTML, CSS", level: "Advanced" },
-        { name: "NextJs", level: "Basic" },
-        { name: "VueJS", level: "Basic" },
+        { name: "NextJs", level: "Intermediate" },
+        { name: "VueJS/NuxtJs", level: "Intermediate" },
+        { name: "Shopify", level: "Basic" },
       ],
       listCertification: [
         {time:'24 February 2021',name:'Toeic',level:'590 Points'}
