@@ -17,7 +17,7 @@
           >
             A Frontend Developer
           </h4>
-          <h1 class="text-[36px] leading-[40px] mb-[12px] dark:text-white font-medium opacity-0">Do Trung Nghia.</h1>
+          <h1 class="text-[36px] leading-[40px] mb-[12px] dark:text-white font-medium animate-[slide-in-top_2.5s_1s_ease-out_both]">Do Trung Nghia.</h1>
           <p class="text-[14px] text-[#BCBCBC] tracking-[0.3px] leading-tight">
             I am a Frontend Developer based in Ha Noi.
           </p>
