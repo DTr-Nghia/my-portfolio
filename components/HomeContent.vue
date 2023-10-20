@@ -17,7 +17,7 @@
           >
             A Frontend Developer
           </h4>
-          <h1 class="text-[36px] leading-[40px] mb-[12px] dark:text-white font-medium">Do Trung Nghia.</h1>
+          <h1 class="text-[36px] leading-[40px] mb-[12px] dark:text-white font-medium opacity-0">Do Trung Nghia.</h1>
           <p class="text-[14px] text-[#BCBCBC] tracking-[0.3px] leading-tight">
             I am a Frontend Developer based in Ha Noi.
           </p>
@@ -53,9 +53,9 @@
               <h4 class="text-gray-300 mb-[12px] text-[12px]">
                 MORE ABOUT ME
               </h4>
-              <h1 class="text-[20px] font-[500] text-black dark:text-white">
+              <h2 class="text-[20px] font-[500] text-black dark:text-white">
                 Credentials
-              </h1>
+              </h2>
             </div>
           </WrapBlock>
           <WrapBlock customStyle="p-[24px]" link="/works" size="lg:w-1/2 xsm:w-full" dataAos="zoom-in">
@@ -66,9 +66,9 @@
               <h4 class="text-gray-300 mb-[12px] text-[12px]">
                 SHOW CASE
               </h4>
-              <h1 class="text-[20px] font-[500] text-black dark:text-white">
+              <h2 class="text-[20px] font-[500] text-black dark:text-white">
                 Projects
-              </h1>
+              </h2>
             </div>
           </WrapBlock>
         </div>
@@ -85,14 +85,14 @@
         <div class="absolute top-0">
               <img src="../assets/images/icon-star.png" class="object-contain"/>
         </div>
-        <h1 class="text-[41px] leading-[52px] text-[#0F0F0F] dark:text-white font-[500]">
+        <h2 class="text-[41px] leading-[52px] text-[#0F0F0F] dark:text-white font-[500]">
           Let' s
           <br/>
           work
           <span class="text-primary font-[500]">
             together.
           </span>
-        </h1>
+        </h2>
       </WrapBlock>
     </section>
   </div>
